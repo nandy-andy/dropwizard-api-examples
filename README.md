@@ -10,12 +10,12 @@ To run the server, run `mvn package` and then `java -jar target/dropwizard-api-e
 
 The application uses http://muppet.wikia.com as the source for Mercury requests. To get an article from the Muppet Wikia:
 
-curl http://localhost:8080/article/50
+`curl http://localhost:8080/article/50`
 
 This will return a representation of the Kermit the Frog article in `application/hal+json` that contains the `content`, `id`, `title`, and `thumbnail`.
 
 Executing:
 
-curl http://localhost:8080/article/50?fromFile=true
+`curl http://localhost:8080/article/50?fromFile=true`
 
 will get a mocked data from a static file.
